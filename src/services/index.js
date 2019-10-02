@@ -24,22 +24,8 @@ const products = [
 
 export const getProducts = () => {
   return new Promise((resolve, reject) => {
-    axios({
-      method: 'get',
-      url: 'http://www.mocky.io/v2/5d9448492f000058008ff605',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status === 400 || res.status === 403) {
-          reject(res)
-        }
-
+      setTimeout(()=>{
         resolve(products)
-      })
-      .catch(err => {
-        reject(err.response)
-      })
+      },2000)
   })
 }
