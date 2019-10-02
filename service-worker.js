@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ezyvet_practice/precache-manifest.166f5656298395427d6c77f9b71fadc5.js"
+  "/ezyvet_practice/precache-manifest.3bca99848fd4e31ba6dc6744b9f5fae0.js"
 );
 
 self.addEventListener('message', (event) => {
